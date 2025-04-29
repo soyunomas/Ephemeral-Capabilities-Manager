@@ -1,0 +1,573 @@
+# Copyright (C) Soyunomas
+# This file is distributed under the same license as the Ephemeral Capabilities Manager plugin.
+msgid ""
+msgstr ""
+"Project-Id-Version: Ephemeral Capabilities Manager 1.0.0\n"
+"Report-Msgid-Bugs-To: YOUR_BUG_REPORT_URL\n"
+"POT-Creation-Date: 2025-04-29 10:00:00+00:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"X-Domain: ephemeral-capabilities-manager\n"
+"X-Generator: Loco https://localise.biz/\n"
+
+#: ephemeral-capabilities-manager.php:58
+#: ephemeral-capabilities-manager.php:60
+msgid "Concesión"
+msgstr ""
+
+#: ephemeral-capabilities-manager.php:59
+#: ephemeral-capabilities-manager.php:60
+msgid "Concesiones"
+msgstr ""
+
+#: ephemeral-capabilities-manager.php:73
+#: ephemeral-capabilities-manager.php:492
+msgid "Filtrar por usuario"
+msgstr ""
+
+#: ephemeral-capabilities-manager.php:76
+#: ephemeral-capabilities-manager.php:495
+msgid "Todos los usuarios"
+msgstr ""
+
+#: ephemeral-capabilities-manager.php:89
+#: ephemeral-capabilities-manager.php:508
+msgid "Filtrar"
+msgstr ""
+
+#: ephemeral-capabilities-manager.php:139
+msgid ""
+"No hay concesiones efímeras activas que coincidan con el filtro."
+msgstr ""
+
+#: ephemeral-capabilities-manager.php:144
+msgid "Usuario Concedido"
+msgstr ""
+
+#: ephemeral-capabilities-manager.php:145
+msgid "Capacidad Concedida"
+msgstr ""
+
+#: ephemeral-capabilities-manager.php:146
+msgid "Otorgado Por"
+msgstr ""
+
+#: ephemeral-capabilities-manager.php:147
+msgid "Expira En / Fecha"
+msgstr ""
+
+#: ephemeral-capabilities-manager.php:148
+#: ephemeral-capabilities-manager.php:197
+msgid "Acciones"
+msgstr ""
+
+#: ephemeral-capabilities-manager.php:159
+msgid "Revocar Seleccionadas"
+msgstr ""
+
+#: ephemeral-capabilities-manager.php:184
+#: ephemeral-capabilities-manager.php:242
+msgid "Usuario ID: %d (No encontrado)"
+msgstr ""
+
+#: ephemeral-capabilities-manager.php:203
+msgid "Desconocido"
+msgstr ""
+
+#: ephemeral-capabilities-manager.php:212
+msgid "en %s"
+msgstr ""
+
+#: ephemeral-capabilities-manager.php:215
+msgid "Expirado"
+msgstr ""
+
+#: ephemeral-capabilities-manager.php:230
+msgid ""
+"¿Estás seguro de que quieres revocar la capacidad \"%s\" para este usuario?"
+msgstr ""
+
+#: ephemeral-capabilities-manager.php:232
+msgid "Revocar"
+msgstr ""
+
+#: ephemeral-capabilities-manager.php:247
+#: ephemeral-capabilities-manager.php:607
+#: ephemeral-capabilities-manager.php:660
+msgid "Error de seguridad (Nonce inválido). Inténtalo de nuevo."
+msgstr ""
+
+#: ephemeral-capabilities-manager.php:252
+#: ephemeral-capabilities-manager.php:525
+#: ephemeral-capabilities-manager.php:610
+#: ephemeral-capabilities-manager.php:663
+msgid "No tienes permisos suficientes para realizar esta acción."
+msgstr ""
+
+#: ephemeral-capabilities-manager.php:260
+#: ephemeral-capabilities-manager.php:238
+msgid "No has seleccionado ninguna concesión para revocar."
+msgstr ""
+
+#: ephemeral-capabilities-manager.php:282
+#: ephemeral-capabilities-manager.php:248
+msgid "Error de base de datos al intentar revocar las concesiones seleccionadas."
+msgstr ""
+
+#: ephemeral-capabilities-manager.php:284
+#: ephemeral-capabilities-manager.php:250
+msgid "Ninguna de las concesiones seleccionadas estaba activa o fueron encontradas."
+msgstr ""
+
+#: ephemeral-capabilities-manager.php:287
+msgid "%d concesión revocada correctamente."
+msgid_plural "%d concesiones revocadas correctamente."
+msgstr[0] ""
+msgstr[1] ""
+
+#: ephemeral-capabilities-manager.php:391
+#: ephemeral-capabilities-manager.php:469
+#: ephemeral-capabilities-manager.php:496
+#: ephemeral-capabilities-manager.php:519
+#: ephemeral-capabilities-manager.php:685
+msgid "Publicar Contenido Propio"
+msgstr ""
+
+#: ephemeral-capabilities-manager.php:392
+#: ephemeral-capabilities-manager.php:470
+#: ephemeral-capabilities-manager.php:497
+#: ephemeral-capabilities-manager.php:520
+#: ephemeral-capabilities-manager.php:686
+msgid ""
+"Permite crear, editar, publicar y eliminar sus propias entradas. Incluye "
+"subir archivos."
+msgstr ""
+
+#: ephemeral-capabilities-manager.php:397
+#: ephemeral-capabilities-manager.php:475
+#: ephemeral-capabilities-manager.php:502
+#: ephemeral-capabilities-manager.php:525
+#: ephemeral-capabilities-manager.php:691
+msgid "Gestionar Todo el Contenido (Editor Temporal)"
+msgstr ""
+
+#: ephemeral-capabilities-manager.php:398
+#: ephemeral-capabilities-manager.php:476
+#: ephemeral-capabilities-manager.php:503
+#: ephemeral-capabilities-manager.php:526
+#: ephemeral-capabilities-manager.php:692
+msgid ""
+"Permite editar, publicar y eliminar entradas y páginas de CUALQUIER usuario. "
+"Incluye gestión de categorías y comentarios."
+msgstr ""
+
+#: ephemeral-capabilities-manager.php:403
+#: ephemeral-capabilities-manager.php:481
+#: ephemeral-capabilities-manager.php:508
+#: ephemeral-capabilities-manager.php:531
+#: ephemeral-capabilities-manager.php:697
+msgid "Moderar Comentarios"
+msgstr ""
+
+#: ephemeral-capabilities-manager.php:404
+#: ephemeral-capabilities-manager.php:482
+#: ephemeral-capabilities-manager.php:509
+#: ephemeral-capabilities-manager.php:532
+#: ephemeral-capabilities-manager.php:698
+msgid "Permite aprobar, desaprobar y editar comentarios."
+msgstr ""
+
+#: ephemeral-capabilities-manager.php:409
+#: ephemeral-capabilities-manager.php:487
+#: ephemeral-capabilities-manager.php:514
+#: ephemeral-capabilities-manager.php:537
+#: ephemeral-capabilities-manager.php:703
+msgid "Gestionar Apariencia (Personalizador/Widgets/Menús)"
+msgstr ""
+
+#: ephemeral-capabilities-manager.php:410
+#: ephemeral-capabilities-manager.php:488
+#: ephemeral-capabilities-manager.php:515
+#: ephemeral-capabilities-manager.php:538
+#: ephemeral-capabilities-manager.php:704
+msgid ""
+"¡RIESGO ALTO! Permite cambiar opciones de tema, widgets y menús. No permite "
+"instalar/cambiar temas."
+msgstr ""
+
+#: ephemeral-capabilities-manager.php:415
+#: ephemeral-capabilities-manager.php:493
+#: ephemeral-capabilities-manager.php:520
+#: ephemeral-capabilities-manager.php:543
+#: ephemeral-capabilities-manager.php:709
+msgid "Instalar Plugins"
+msgstr ""
+
+#: ephemeral-capabilities-manager.php:416
+#: ephemeral-capabilities-manager.php:494
+#: ephemeral-capabilities-manager.php:521
+#: ephemeral-capabilities-manager.php:544
+#: ephemeral-capabilities-manager.php:710
+msgid ""
+"¡RIESGO MUY ALTO! Permite buscar e instalar nuevos plugins desde el "
+"repositorio de WordPress o subiendo un ZIP."
+msgstr ""
+
+#: ephemeral-capabilities-manager.php:421
+#: ephemeral-capabilities-manager.php:499
+#: ephemeral-capabilities-manager.php:526
+#: ephemeral-capabilities-manager.php:549
+#: ephemeral-capabilities-manager.php:715
+msgid "Activar/Desactivar Plugins"
+msgstr ""
+
+#: ephemeral-capabilities-manager.php:422
+#: ephemeral-capabilities-manager.php:500
+#: ephemeral-capabilities-manager.php:527
+#: ephemeral-capabilities-manager.php:550
+#: ephemeral-capabilities-manager.php:716
+msgid "¡RIESGO ALTO! Permite activar o desactivar plugins ya instalados."
+msgstr ""
+
+#: ephemeral-capabilities-manager.php:427
+#: ephemeral-capabilities-manager.php:505
+#: ephemeral-capabilities-manager.php:532
+#: ephemeral-capabilities-manager.php:555
+#: ephemeral-capabilities-manager.php:721
+msgid "Actualizar Plugins"
+msgstr ""
+
+#: ephemeral-capabilities-manager.php:428
+#: ephemeral-capabilities-manager.php:506
+#: ephemeral-capabilities-manager.php:533
+#: ephemeral-capabilities-manager.php:556
+#: ephemeral-capabilities-manager.php:722
+msgid "Riesgo Medio. Permite actualizar plugins a nuevas versiones disponibles."
+msgstr ""
+
+#: ephemeral-capabilities-manager.php:433
+#: ephemeral-capabilities-manager.php:511
+#: ephemeral-capabilities-manager.php:538
+#: ephemeral-capabilities-manager.php:561
+#: ephemeral-capabilities-manager.php:727
+msgid "Instalar Temas"
+msgstr ""
+
+#: ephemeral-capabilities-manager.php:434
+#: ephemeral-capabilities-manager.php:512
+#: ephemeral-capabilities-manager.php:539
+#: ephemeral-capabilities-manager.php:562
+#: ephemeral-capabilities-manager.php:728
+msgid ""
+"¡RIESGO MUY ALTO! Permite buscar e instalar nuevos temas desde el "
+"repositorio o subiendo un ZIP."
+msgstr ""
+
+#: ephemeral-capabilities-manager.php:439
+#: ephemeral-capabilities-manager.php:517
+#: ephemeral-capabilities-manager.php:544
+#: ephemeral-capabilities-manager.php:567
+#: ephemeral-capabilities-manager.php:733
+msgid "Cambiar Tema Activo"
+msgstr ""
+
+#: ephemeral-capabilities-manager.php:440
+#: ephemeral-capabilities-manager.php:518
+#: ephemeral-capabilities-manager.php:545
+#: ephemeral-capabilities-manager.php:568
+#: ephemeral-capabilities-manager.php:734
+msgid ""
+"¡RIESGO ALTO! Permite activar un tema diferente de los ya instalados."
+msgstr ""
+
+#: ephemeral-capabilities-manager.php:445
+#: ephemeral-capabilities-manager.php:523
+#: ephemeral-capabilities-manager.php:550
+#: ephemeral-capabilities-manager.php:573
+#: ephemeral-capabilities-manager.php:739
+msgid "Actualizar Temas"
+msgstr ""
+
+#: ephemeral-capabilities-manager.php:446
+#: ephemeral-capabilities-manager.php:524
+#: ephemeral-capabilities-manager.php:551
+#: ephemeral-capabilities-manager.php:574
+#: ephemeral-capabilities-manager.php:740
+msgid "Riesgo Medio. Permite actualizar temas a nuevas versiones disponibles."
+msgstr ""
+
+#: ephemeral-capabilities-manager.php:451
+#: ephemeral-capabilities-manager.php:529
+#: ephemeral-capabilities-manager.php:556
+#: ephemeral-capabilities-manager.php:579
+#: ephemeral-capabilities-manager.php:745
+msgid "Gestionar Usuarios (Básico)"
+msgstr ""
+
+#: ephemeral-capabilities-manager.php:452
+#: ephemeral-capabilities-manager.php:530
+#: ephemeral-capabilities-manager.php:557
+#: ephemeral-capabilities-manager.php:580
+#: ephemeral-capabilities-manager.php:746
+msgid ""
+"¡RIESGO ALTO! Permite ver, añadir, editar y eliminar usuarios (excepto "
+"administradores)."
+msgstr ""
+
+#: ephemeral-capabilities-manager.php:457
+#: ephemeral-capabilities-manager.php:535
+#: ephemeral-capabilities-manager.php:562
+#: ephemeral-capabilities-manager.php:585
+#: ephemeral-capabilities-manager.php:751
+msgid "Promover Usuarios (Limitado)"
+msgstr ""
+
+#: ephemeral-capabilities-manager.php:458
+#: ephemeral-capabilities-manager.php:536
+#: ephemeral-capabilities-manager.php:563
+#: ephemeral-capabilities-manager.php:586
+#: ephemeral-capabilities-manager.php:752
+msgid ""
+"¡RIESGO MUY ALTO! Permite cambiar el rol de otros usuarios a roles "
+"inferiores o iguales al propio. NO permite promover a Administrador."
+msgstr ""
+
+#: ephemeral-capabilities-manager.php:463
+#: ephemeral-capabilities-manager.php:541
+#: ephemeral-capabilities-manager.php:568
+#: ephemeral-capabilities-manager.php:591
+#: ephemeral-capabilities-manager.php:757
+msgid "Importar/Exportar Contenido"
+msgstr ""
+
+#: ephemeral-capabilities-manager.php:464
+#: ephemeral-capabilities-manager.php:542
+#: ephemeral-capabilities-manager.php:569
+#: ephemeral-capabilities-manager.php:592
+#: ephemeral-capabilities-manager.php:758
+msgid "Permite usar las herramientas de Importar y Exportar de WordPress."
+msgstr ""
+
+#: ephemeral-capabilities-manager.php:479
+#: ephemeral-capabilities-manager.php:556
+msgid "Gestionar Capacidades Efímeras"
+msgstr ""
+
+#: ephemeral-capabilities-manager.php:480
+#: ephemeral-capabilities-manager.php:557
+msgid "Capacidades Efímeras"
+msgstr ""
+
+#: ephemeral-capabilities-manager.php:508
+#: ephemeral-capabilities-manager.php:617
+#: ephemeral-capabilities-manager.php:781
+msgid "Primero selecciona un usuario"
+msgstr ""
+
+#: ephemeral-capabilities-manager.php:509
+#: ephemeral-capabilities-manager.php:618
+#: ephemeral-capabilities-manager.php:782
+msgid "-- Seleccionar Tarea --"
+msgstr ""
+
+#: ephemeral-capabilities-manager.php:510
+#: ephemeral-capabilities-manager.php:619
+#: ephemeral-capabilities-manager.php:783
+msgid "Riesgo Medio"
+msgstr ""
+
+#: ephemeral-capabilities-manager.php:511
+#: ephemeral-capabilities-manager.php:620
+#: ephemeral-capabilities-manager.php:784
+msgid "¡Riesgo Alto!"
+msgstr ""
+
+#: ephemeral-capabilities-manager.php:512
+#: ephemeral-capabilities-manager.php:621
+#: ephemeral-capabilities-manager.php:785
+msgid "¡RIESGO CRÍTICO!"
+msgstr ""
+
+#: ephemeral-capabilities-manager.php:542
+#: ephemeral-capabilities-manager.php:651
+msgid "No tienes permisos suficientes para acceder a esta página."
+msgstr ""
+
+#: ephemeral-capabilities-manager.php:549
+#: ephemeral-capabilities-manager.php:658
+msgid "Conceder Tarea Temporal"
+msgstr ""
+
+#: ephemeral-capabilities-manager.php:550
+#: ephemeral-capabilities-manager.php:659
+msgid ""
+"Selecciona un usuario, una tarea predefinida y una duración para conceder "
+"capacidades temporalmente."
+msgstr ""
+
+#: ephemeral-capabilities-manager.php:563
+#: ephemeral-capabilities-manager.php:672
+msgid "Usuario"
+msgstr ""
+
+#: ephemeral-capabilities-manager.php:576
+#: ephemeral-capabilities-manager.php:685
+msgid "-- Seleccionar Usuario --"
+msgstr ""
+
+#: ephemeral-capabilities-manager.php:583
+#: ephemeral-capabilities-manager.php:692
+msgid "Solo se muestran usuarios no administradores."
+msgstr ""
+
+#: ephemeral-capabilities-manager.php:587
+#: ephemeral-capabilities-manager.php:696
+msgid "Tarea a Permitir"
+msgstr ""
+
+#: ephemeral-capabilities-manager.php:592
+#: ephemeral-capabilities-manager.php:701
+msgid "-- Primero Selecciona un Usuario --"
+msgstr ""
+
+#: ephemeral-capabilities-manager.php:596
+#: ephemeral-capabilities-manager.php:705
+msgid ""
+"Las tareas disponibles dependen de las capacidades actuales del usuario "
+"seleccionado."
+msgstr ""
+
+#: ephemeral-capabilities-manager.php:600
+#: ephemeral-capabilities-manager.php:709
+msgid "Duración"
+msgstr ""
+
+#: ephemeral-capabilities-manager.php:609
+#: ephemeral-capabilities-manager.php:718
+msgid "15 Minutos"
+msgstr ""
+
+#: ephemeral-capabilities-manager.php:610
+#: ephemeral-capabilities-manager.php:719
+msgid "1 Hora"
+msgstr ""
+
+#: ephemeral-capabilities-manager.php:611
+#: ephemeral-capabilities-manager.php:720
+msgid "4 Horas"
+msgstr ""
+
+#: ephemeral-capabilities-manager.php:612
+#: ephemeral-capabilities-manager.php:721
+msgid "8 Horas"
+msgstr ""
+
+#: ephemeral-capabilities-manager.php:613
+#: ephemeral-capabilities-manager.php:722
+msgid "1 Día"
+msgstr ""
+
+#: ephemeral-capabilities-manager.php:614
+#: ephemeral-capabilities-manager.php:723
+msgid "1 Semana"
+msgstr ""
+
+#: ephemeral-capabilities-manager.php:617
+#: ephemeral-capabilities-manager.php:726
+msgid "-- Seleccionar Duración --"
+msgstr ""
+
+#: ephemeral-capabilities-manager.php:624
+#: ephemeral-capabilities-manager.php:733
+msgid "Selecciona por cuánto tiempo serán válidos los permisos."
+msgstr ""
+
+#: ephemeral-capabilities-manager.php:632
+#: ephemeral-capabilities-manager.php:741
+msgid "Conceder Tarea Temporal"
+msgstr ""
+
+#: ephemeral-capabilities-manager.php:637
+msgid "Concesiones Activas Actualmente"
+msgstr ""
+
+#: ephemeral-capabilities-manager.php:627
+#: ephemeral-capabilities-manager.php:791
+msgid "Usuario seleccionado inválido o es un administrador."
+msgstr ""
+
+#: ephemeral-capabilities-manager.php:631
+#: ephemeral-capabilities-manager.php:795
+msgid "Tarea seleccionada inválida."
+msgstr ""
+
+#: ephemeral-capabilities-manager.php:635
+#: ephemeral-capabilities-manager.php:799
+msgid "Duración seleccionada inválida."
+msgstr ""
+
+#: ephemeral-capabilities-manager.php:648
+#: ephemeral-capabilities-manager.php:812
+msgid ""
+"La tarea seleccionada no otorga ninguna capacidad nueva a este usuario (ya "
+"las posee)."
+msgstr ""
+
+#: ephemeral-capabilities-manager.php:681
+#: ephemeral-capabilities-manager.php:845
+msgid "Error al guardar una o más capacidades en la base de datos."
+msgstr ""
+
+#: ephemeral-capabilities-manager.php:683
+#: ephemeral-capabilities-manager.php:847
+msgid "Se guardaron %d de %d capacidades."
+msgstr ""
+
+#: ephemeral-capabilities-manager.php:689
+#: ephemeral-capabilities-manager.php:853
+msgid "Tarea %1$s concedida a %2$s hasta %3$s."
+msgstr ""
+
+#: ephemeral-capabilities-manager.php:694
+#: ephemeral-capabilities-manager.php:858
+msgid "Se otorgaron %d capacidades nuevas/renovadas."
+msgstr ""
+
+#: ephemeral-capabilities-manager.php:710
+#: ephemeral-capabilities-manager.php:874
+msgid "ID de concesión inválido."
+msgstr ""
+
+#: ephemeral-capabilities-manager.php:720
+#: ephemeral-capabilities-manager.php:884
+msgid "No tienes permisos para revocar esta concesión."
+msgstr ""
+
+#: ephemeral-capabilities-manager.php:735
+#: ephemeral-capabilities-manager.php:899
+msgid "Error al intentar revocar la concesión en la base de datos."
+msgstr ""
+
+#: ephemeral-capabilities-manager.php:737
+#: ephemeral-capabilities-manager.php:901
+msgid "La concesión no se encontró o ya no estaba activa."
+msgstr ""
+
+#: ephemeral-capabilities-manager.php:739
+#: ephemeral-capabilities-manager.php:903
+msgid "Concesión revocada correctamente."
+msgstr ""
+
+#: ephemeral-capabilities-manager.php:983
+msgid "Cada 15 Minutos (ECM)"
+msgstr ""
+
+#: ephemeral-capabilities-manager.php:989
+msgid "Cada 5 Minutos (ECM)"
+msgstr ""
