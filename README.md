@@ -71,14 +71,11 @@
 
 ## Capturas de Pantalla (Placeholders)
 
-*(Aquí podrías añadir imágenes mostrando la interfaz)*
-
-1.  **Página de Administración:**
-    `![Página de Administración](URL_A_SCREENSHOT_1.png)`
-2.  **Desplegable de Tareas con Indicadores de Riesgo:**
-    `![Desplegable de Tareas](URL_A_SCREENSHOT_2.png)`
-3.  **Tabla de Concesiones Activas:**
-    `![Tabla de Concesiones](URL_A_SCREENSHOT_3.png)`
+1.  **Desplegable de Tareas con Indicadores de Riesgo:**
+    `![Desplegable de Tareas](images/screenshot_1.png)`
+    
+2.  **Tabla de Concesiones Activas:**
+    `![Tabla de Concesiones](images/screenshot_2.png)`
 
 ---
 
