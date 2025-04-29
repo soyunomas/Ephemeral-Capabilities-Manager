@@ -72,10 +72,10 @@
 ## Capturas de Pantalla (Placeholders)
 
 1.  **Desplegable de Tareas con Indicadores de Riesgo:**
-    `![Desplegable de Tareas](images/screenshot_1.png)`
+    ![Desplegable de Tareas](./images/screenshot_1.png)
     
 2.  **Tabla de Concesiones Activas:**
-    `![Tabla de Concesiones](images/screenshot_2.png)`
+    ![Tabla de Concesiones](./images/screenshot_2.png)
 
 ---
 
