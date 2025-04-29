@@ -341,38 +341,40 @@ class ECM_Grants_List_Table extends WP_List_Table {
 		}
 	}
 
-	/**
-	 * Renderiza la columna 'actions' con el enlace para revocar individualmente.
-	 *
-	 * @since 0.5.0
-	 * @param array $item Fila de datos actual.
-	 * @return string HTML con las acciones de fila (solo Revocar).
-	 */
-	protected function column_actions( $item ) {
-		$revoke_nonce = wp_create_nonce( 'ecm_revoke_grant_' . $item['grant_id'] );
-		// Construir la URL para la acción admin-post.php, manteniendo filtros.
-		$revoke_url = add_query_arg(
-			[
-				'action'      => 'ecm_revoke_grant', // Nuestro hook para admin-post.php.
-				'grant_id'    => $item['grant_id'],
-				'_wpnonce'    => $revoke_nonce,
-				'user_filter' => isset( $_GET['user_filter'] ) ? absint( $_GET['user_filter'] ) : 0, // Mantener filtro.
-			],
-			admin_url( 'admin-post.php' )
-		);
+/**
+ * Renderiza la columna 'actions' con el enlace para revocar individualmente.
+ * MODIFICADO: Devuelve el enlace directamente para que sea siempre visible.
+ *
+ * @since 0.5.0
+ * @since 1.0.0 Modificado para visibilidad constante.
+ *
+ * @param array $item Fila de datos actual.
+ * @return string HTML con la acción de revocación.
+ */
+protected function column_actions( $item ) {
+	$revoke_nonce = wp_create_nonce( 'ecm_revoke_grant_' . $item['grant_id'] );
+	// Construir la URL para la acción admin-post.php, manteniendo filtros.
+	$revoke_url = add_query_arg(
+		[
+			'action'      => 'ecm_revoke_grant', // Nuestro hook para admin-post.php.
+			'grant_id'    => $item['grant_id'],
+			'_wpnonce'    => $revoke_nonce,
+			'user_filter' => isset( $_GET['user_filter'] ) ? absint( $_GET['user_filter'] ) : 0, // Mantener filtro.
+		],
+		admin_url( 'admin-post.php' )
+	);
 
-		$actions            = [];
-		$actions['revoke'] = sprintf(
-			'<a href="%s" class="ecm-revoke-link" onclick="return confirm(\'%s\');" style="color:#a00;">%s</a>',
-			esc_url( $revoke_url ),
-			esc_js( sprintf( __( '¿Estás seguro de que quieres revocar la capacidad "%s" para este usuario?', 'ephemeral-capabilities-manager' ), $item['capability'] ) ),
-			esc_html__( 'Revocar', 'ephemeral-capabilities-manager' )
-		);
+	// Construir directamente el HTML del enlace "Revocar".
+	$revoke_link_html = sprintf(
+		'<a href="%s" class="ecm-revoke-link" onclick="return confirm(\'%s\');" style="color:#a00;">%s</a>',
+		esc_url( $revoke_url ),
+		esc_js( sprintf( __( '¿Estás seguro de que quieres revocar la capacidad "%s" para este usuario?', 'ephemeral-capabilities-manager' ), $item['capability'] ) ),
+		esc_html__( 'Revocar', 'ephemeral-capabilities-manager' )
+	);
 
-		// Usar row_actions para formatear las acciones correctamente.
-		return $this->row_actions( $actions );
-	}
-
+	// Devolver directamente el HTML del enlace, SIN usar $this->row_actions().
+	return $revoke_link_html;
+      }
 	/**
 	 * Procesa las acciones en lote (solo 'bulk_revoke').
 	 * Verifica nonce, permisos, sanitiza IDs, actualiza la BD y redirige.
