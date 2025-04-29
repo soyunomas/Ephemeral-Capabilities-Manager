@@ -69,6 +69,56 @@
 
 ---
 
+## Preguntas Frecuentes (FAQ)
+
+### ¿Qué pasa cuando expira el tiempo?
+
+El usuario pierde inmediatamente las capacidades concedidas. La comprobación central de permisos (filtro `user_has_cap`) compara constantemente el tiempo de expiración de la concesión con la hora actual. Incluso si la tarea Cron de limpieza en segundo plano aún no se ha ejecutado, el permiso desaparece efectivamente en el momento en que pasa el tiempo de expiración.
+
+### ¿Puedo conceder permisos a Administradores?
+
+No. El plugin está diseñado para conceder *elevaciones temporales* a usuarios con *menos* privilegios. Los administradores ya tienen todas las capacidades, por lo que concederles capacidades temporales es innecesario y potencialmente confuso. El desplegable de selección de usuario excluye a los administradores.
+
+### ¿Qué 'Tareas' están disponibles por defecto?
+
+El plugin incluye paquetes para tareas comunes como:
+
+*   Publicar Contenido Propio (Riesgo Bajo)
+*   Gestionar Todo el Contenido (Riesgo Medio)
+*   Moderar Comentarios (Riesgo Bajo)
+*   Gestionar Apariencia (Riesgo Alto)
+*   Instalar Plugins (Riesgo Crítico)
+*   Activar/Desactivar Plugins (Riesgo Alto)
+*   Actualizar Plugins (Riesgo Medio)
+*   Instalar Temas (Riesgo Crítico)
+*   Cambiar Tema Activo (Riesgo Alto)
+*   Actualizar Temas (Riesgo Medio)
+*   Gestionar Usuarios (Básico) (Riesgo Alto)
+*   Promover Usuarios (Limitado) (Riesgo Crítico)
+*   Importar/Exportar Contenido (Riesgo Medio)
+
+### ¿Qué pasa si concedo una tarea pero el usuario ya tiene esas capacidades?
+
+El plugin lo comprueba antes de concederla. Si la tarea seleccionada no proporciona ninguna capacidad **nueva** que el usuario no posea ya (directamente o a través de su rol), la concesión será denegada y se mostrará un mensaje de error.
+
+### ¿Puede un usuario ver qué permisos temporales tiene?
+
+Actualmente (v1.0.0), no hay una interfaz específica para que el *usuario final* vea sus concesiones efímeras activas. Solo los administradores (con la capacidad `promote_users`) pueden ver la lista en la página de administración del plugin. Esto podría ser una característica para una versión futura.
+
+### ¿Qué pasa si desactivo el plugin?
+
+Al desactivarlo, se elimina la tarea WP-Cron programada para la limpieza. La tabla de base de datos personalizada (`wp_ephemeral_grants`) y las opciones del plugin permanecen en la base de datos, pero el filtro central (`user_has_cap`) ya no está activo, por lo que **todos los permisos temporales concedidos por este plugin dejan de funcionar inmediatamente**, incluso si su tiempo de expiración no ha llegado según la base de datos.
+
+### ¿Qué pasa si elimino el plugin?
+
+Al eliminarlo a través de la pantalla de Plugins de WordPress, se ejecuta el script `uninstall.php` y **elimina completamente** la tabla de base de datos personalizada (`wp_ephemeral_grants`), la opción de versión del plugin de `wp_options`, y asegura que la tarea WP-Cron esté desprogramada. Es una eliminación limpia.
+
+### ¿Es compatible con plugins de Autenticación de Dos Factores (2FA)?
+
+Sí, debería ser totalmente compatible. ECM opera sobre las capacidades de WordPress *después* de que un usuario haya iniciado sesión correctamente. Los plugins de 2FA suelen actuar *durante* el propio proceso de inicio de sesión. Funcionan en capas diferentes.
+
+---
+
 ## Capturas de Pantalla (Placeholders)
 
 1.  **Desplegable de Tareas con Indicadores de Riesgo:**
